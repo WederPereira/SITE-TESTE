@@ -20,7 +20,10 @@
 
     <header id="main-header">
         <div class="brand">ADRIANA F. <span>SANTOS</span></div>
-        <nav>
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <i data-lucide="menu"></i>
+        </button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#expertise">Áreas de Atuação</a></li>
@@ -123,6 +126,30 @@
     <script>
         // Init Lucide
         lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.setAttribute('data-lucide', 'x');
+            } else {
+                icon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
+                lucide.createIcons();
+            });
+        });
 
         // Header scroll effect
         const header = document.getElementById('main-header');
