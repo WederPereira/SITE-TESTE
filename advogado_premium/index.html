@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adriana F. Santos | Advocacia & Consultoria Jurídica</title>
+    <meta name="description" content="Escritório de advocacia Adriana F. Santos. Especialista em Direito Civil, Trabalhista e de Família. Excelência e compromisso na defesa de seus direitos.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- SEO & Favicon -->
+    <link rel="canonical" href="https://exemplo-advocacia.com.br">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="brand">ADRIANA F. <span>SANTOS</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#expertise">Áreas de Atuação</a></li>
+                <li><a href="#about">O Escritório</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="#contact" class="cta-button" id="btn-consult">Agendar Consulta</a>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="hero_lawyer.jpeg" alt="Adriana F. Santos Advocacia" class="hero-img">
+        <div class="hero-content">
+            <h1 class="animate">Justiça com Rigor Tecnico e Dedicação</h1>
+            <p class="animate">Soluções jurídicas estratégicas para desafios complexos. Protegendo seus direitos e o seu futuro com excelência.</p>
+            <div class="hero-btns animate">
+                <a href="#expertise" class="cta-button">Nossa Atuação</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="services">
+        <div class="section-title">
+            <h2 class="animate">Áreas de Atuação</h2>
+            <div class="divider animate"></div>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card animate">
+                <i data-lucide="scale"></i>
+                <h3>Direito Civil</h3>
+                <p>Resolução de conflitos, contratos, danos morais e materiais com foco na mitigação de riscos.</p>
+            </div>
+            <div class="service-card animate">
+                <i data-lucide="briefcase"></i>
+                <h3>Direito do Trabalho</h3>
+                <p>Assessoria completa para empresas e empregados, garantindo o cumprimento da legislação vigente.</p>
+            </div>
+            <div class="service-card animate">
+                <i data-lucide="building"></i>
+                <h3>Direito Imobiliário</h3>
+                <p>Regularização de imóveis, contratos de compra e venda, e questões de vizinhança.</p>
+            </div>
+            <div class="service-card animate">
+                <i data-lucide="users"></i>
+                <h3>Direito de Família</h3>
+                <p>Mediação e acompanhamento em processos de inventário, divórcio e guarda com sensibilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-img animate">
+            <img src="justice_icon.png" alt="Símbolo da Justiça">
+        </div>
+        <div class="about-content animate">
+            <h2>Compromisso com Resultados</h2>
+            <p>Com anos de experiência e um histórico de dedicação à justiça, o escritório Adriana F. Santos pauta sua atuação na transparência, ética e no profundo conhecimento técnico.</p>
+            <p>Nossa equipe — liderada por Adriana F. Santos — é composta por especialistas dedicados a oferecer um atendimento altamente personalizado, entendendo que cada caso exige uma estratégia única e precisa para alcançar os melhores resultados.</p>
+            <a href="#contact" class="cta-button">Conheça nossa História</a>
+        </div>
+    </section>
+
+    <section class="banner">
+        <h2 class="animate">Precisa de orientação jurídica imediata?</h2>
+        <a href="https://wa.me/5511988303567" class="cta-button animate" style="background-color: #25D366; border-color: #25D366;">
+            Falar no WhatsApp
+        </a>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="brand">ADRIANA F. <span>SANTOS</span></div>
+                <p style="margin-top: 20px; color: #8892b0;">Excelência e tradição na defesa dos seus direitos.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#expertise">Serviços</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+
+                    <li><i data-lucide="phone" style="width: 16px; display: inline; vertical-align: middle;"></i> (11) 98830-3567</li>
+                    <li><i data-lucide="mail" style="width: 16px; display: inline; vertical-align: middle;"></i> <a href="mailto:advogada.adriana.f.santos@adv.oabsp.org.br" style="color: inherit; text-decoration: none;">advogada.adriana.f.santos@adv.oabsp.org.br</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Adriana F. Santos Advocacia. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Init Lucide
+        lucide.createIcons();
+
+        // Header scroll effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+
+        // Initial check for scroll state
+        window.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+</html>
