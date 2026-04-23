@@ -63,6 +63,7 @@ header {
     backdrop-filter: blur(10px);
     z-index: 1000;
     transition: var(--transition);
+    border-bottom: 1px solid #c5a059;
 }
 
 header.scrolled {
