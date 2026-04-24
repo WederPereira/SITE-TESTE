@@ -100,6 +100,7 @@ nav a {
 
 nav a:hover {
     color: var(--secondary);
+    border-bottom: 1.5px solid var(--secondary);
 }
 
 .cta-button {
